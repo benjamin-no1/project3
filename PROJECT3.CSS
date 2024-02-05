@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+a.sedanbutton:link, a.sedanbutton:visited {
+    background-color: white;
+    color: orange;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    border: 3px solid white;
+  }
+  
+  a.sedanbutton:hover, a.sedanbutton:active {
+    background-color: orange;
+    color: white;
+  }
+  a.suvbutton:link, a.suvbutton:visited {
+    background-color: white;
+    color: rgb(0, 128, 128) ;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    border: 3px solid white;
+  }
+  
+  a.suvbutton:hover, a.suvbutton:active {
+    background-color: rgb(0, 128, 128);
+    color: white;
+  }
+  a.luxurybutton:link, a.luxurybutton:visited {
+    background-color: white;
+    color: rgb(0, 51, 51);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    border: 3px solid white;
+  }
+  a.luxurybutton:hover, a.luxurybutton:active {
+    background-color: rgb(0, 51, 51);
+    color: white;
+  }
+  .sedans, .suvs, .luxury {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+
+  }
+  
+  .allcars::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .sedans{
+    background-color: orange;
+    color: white;
+    border-radius:10px 0px 0px 10px;
+  }
+  .suvs{
+   background-color: rgb(0, 128, 128);
+   color: white;
+  }
+  .luxury{
+    background-color: rgb(0, 51, 51);
+    color: white;
+    border-radius:0px 10px 10px 0px;
+  }
+  .allcars{
+    margin: 70px;
+    
+}
+@media screen and (max-width:768px) {
+.allcars{
+display:flex;
+flex-direction: column;
+width: 80%;
+
+}
+  
+}
+.luxury{
+
+  border-radius:0px;
+}
+.sedans{
+
+  border-radius:0px;
+}
